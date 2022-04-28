@@ -40,14 +40,18 @@ dl > dd{
 }
 .bibi-info{
     margin-bottom: 15px;
+    max-width: 500px;
 }
 .bibi-info > dt{
     display: inline-block;
-    width: 30%;
+    width: 30%; max-width: 195px;
 }
 .bibi-info > dd{
     display: inline-block;
     width: 68%;
+}
+.inst{
+    margin-right: 20px;
 }
 /*slide*/
 .album-cover{
@@ -95,6 +99,7 @@ margin-left: -18px;
 /* career */
 .career h1{
     text-align: center;
+    margin-top: 40px;
 }
 .year{
     font-size: 1.25rem;
@@ -120,8 +125,8 @@ margin-left: -18px;
     gap: 10px;
 }
 .album-img li{
-    width: 31%;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
 }
 .img-wid100{
@@ -135,4 +140,132 @@ margin-left: -18px;
 }
 .han{
     margin-left: -38px;
+}
+@media screen and (min-width: 560px) {
+    .next-line{display: block;}
+    .represent{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .company-logo{
+        font-size: 4rem;
+    }
+    .information-bibi > h1{
+        font-size: 5rem;
+    }
+    .inner:nth-of-type(1) img {
+        margin-top: -130px;
+        margin-left: -52px;
+        }
+    .inner:nth-of-type(2) img {
+        margin-top: -211px;
+        margin-left: -65px;
+    }
+    .inner:nth-of-type(3) img {
+        margin-top: -37px;
+        margin-left: -45px;
+    }
+    .information-music dl dt{
+        display: inline-block;
+        width: 15%;
+        vertical-align: top;
+    }
+    .information-music dl dd{
+        display: inline-block;
+        width: 75%;
+    }
+    .year{
+        display: flex;
+        gap: 20px;
+    }
+}
+@media screen and (min-width:760px){
+    .represent{
+        gap: 20px;
+    }
+    .information-bibi > div{
+        position: static;
+    }
+    .information-bibi > div img{
+        display: inline-block;
+        width: 60%; max-width: 350px;
+        margin-right: 20px;
+    }
+    .company-logo{
+        position: static;
+    }
+    .container{
+        width: 100vw;
+    }
+    .inner{
+        width: 30%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .inner:nth-of-type(1) img {
+        margin-top: -35px;
+        margin-left: 0;
+        }
+    .inner:nth-of-type(2) img {
+        margin-top: -68px;
+        margin-left: 0;
+    }
+    .inner:nth-of-type(3) img {
+        margin-top: -37px;
+        margin-left: -45px;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        gap: 35px;
+    }
+    .year{
+        font-size: 2.25rem;
+        margin-bottom: 40px;
+    }
+    .year ul{
+        margin-left: 20px;
+    }
+}@media screen and (min-width:1070px){
+    .carrer{
+        margin-top: 250px;
+    }
+    .career > ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .inner{
+        height: 300px;
+    }
+    .year{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (min-width:1700px){
+    .information{
+        display: flex;
+    }
+    .information-bibi{
+        width: 40%;
+    }
+    .information-music{
+        width: 58%;
+    }
+    .company-logo{
+        font-size: 2.5rem;
+    }
+    .album-cover{
+        margin-top: 0;
+    }
+    .inner{
+        width: 33%;
+        height: 250px;
+    }
+    .inner:nth-of-type(3) img {
+        margin-top: -37px;
+        margin-left: 0;
+    }
 }
