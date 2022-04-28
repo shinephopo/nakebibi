@@ -26,7 +26,7 @@
     background: url('../bibi-img/main-goods.jpg') no-repeat;  
     cursor: pointer;
 }
-#album-goods > div > a{
+.album-banner-img > a, .goods-banner-img > a{
     display: block; width: 100%; height: 100%;
     text-align: center;
     font-family: 'Anton', sans-serif;
@@ -100,12 +100,12 @@ iframe{width: 100%; height: 420px;}
         height: 400px;
         background-size: cover;
     }
-    #album-goods > div > a{
+    .album-banner-img > a, .goods-banner-img > a{
         line-height: 400px;
         background-color: #0000006c;
         display: none;
     }
-    #album-goods > div:hover > a{
+    .album-banner-img:hover > a, .goods-banner-img:hover > a{
         display: block;
     }
     iframe{
@@ -145,8 +145,11 @@ iframe{width: 100%; height: 420px;}
         background-position: 0 -8px; 
     }
     .goods-banner-img{
-        width: 100%;  height: 220px;
+        width: 100%;  height: 230px;
         background-position: 0px -63px;
+    }
+    .goods-banner-img a{
+        line-height: 220px;
     }
     iframe{width: 100%; height: 100%;}
     #bibi-is{
