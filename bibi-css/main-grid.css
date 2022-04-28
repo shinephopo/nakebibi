@@ -117,7 +117,9 @@ iframe{width: 100%; height: 420px;}
     }
     #bibi-is > p{
         font-size: 4.5rem;
-        width: 50%;
+    }
+    #bibi-is > div{
+        width: 37%;
     }
 }
 @media screen and (min-width:1070px){
