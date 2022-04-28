@@ -1,0 +1,165 @@
+.main-txt{
+    position:static;
+}
+#main-banner-img{
+    width: 100%; 
+    background: url('../bibi-img/main-banner.png') no-repeat; 
+    cursor: pointer;
+}
+#main-banner-img > a{
+    display: block; width: 100%; height: 100%;
+    text-align: center;
+    font-family: 'Anton', sans-serif; 
+}
+#album-goods{
+    margin: 36px auto;
+    width: 100%;
+    display: flex; justify-content: space-between;
+}
+.album-banner-img{
+    width: 40%; height: 100%;
+    background: url('../bibi-img/album-banner.png') 0 0 no-repeat;
+    cursor: pointer;
+}
+.goods-banner-img{
+    width: 55%;  height: 100%;
+    background: url('../bibi-img/main-goods.jpg') no-repeat;  
+    cursor: pointer;
+}
+#album-goods > div > a{
+    display: block; width: 100%; height: 100%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 1px #fff;
+}
+
+iframe{width: 100%; height: 420px;}
+#bibi-is{
+    margin: 3vh auto;
+    width: 100%;
+}
+.company-logo{
+    display: inline-block;
+    font-family: 'Major Mono Display', monospace; 
+    font-size: 2.5rem;
+}
+#bibi-is > div{
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif; color: #3c3c3c;
+} 
+#bibi-is > div > h1{font-size: 2rem;}
+#bibi-is > div > p{font-size: 1rem;}
+#main-banner-img{
+    height: 400px; 
+    background-position: -280px;
+    margin-top: 5vh;
+}
+.album-banner-img, .goods-banner-img{
+    height: 300px;
+    line-height: 300px;
+    font-size: 2.5rem;
+}
+.album-banner-img{
+    background-position: -20px;
+    background-size: cover;
+}
+#bibi-is > div{
+    margin-top: 20px;
+    gap: 15px;
+}
+@media screen and (min-width:560px){
+    .main-txt{
+        font-size: 5rem;
+        line-height: 95px;
+    }
+    #bibi-is{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #bibi-is > p{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+    }
+    #bibi-is > div{
+        margin-top: 0;
+    }
+}
+@media screen and (min-width:760px){
+    .main-txt{
+        position: absolute;
+        top: 250px; left: 80px;
+    }
+    #main-banner-img{
+        width: 100%;  
+        height: 620px; margin-top: 30px;
+        background-position: -21px;
+    }
+    .album-banner-img{
+        height: 400px;
+        background-position: 0;
+    }
+    .goods-banner-img{
+        height: 400px;
+        background-size: cover;
+    }
+    #album-goods > div > a{
+        line-height: 400px;
+        background-color: #0000006c;
+        display: none;
+    }
+    #album-goods > div:hover > a{
+        display: block;
+    }
+    iframe{
+        height: 500px;
+    }
+    #bibi-is > p{
+        font-size: 4.5rem;
+        width: 50%;
+    }
+}
+@media screen and (min-width:1070px){
+    .main-txt{
+        top: 280px; left: 100px;
+    }
+    .wrapper > section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 3%;
+        width: 80%; max-width: 1350px; height: 890px;
+        float: right;
+        margin-bottom: 3vh;
+    }
+    #main-banner-img{
+        grid-column: 1/3;
+        background-position: -21px;
+        margin: 0;
+    }
+    #album-goods{
+        flex-direction:column;
+        margin: 0;
+    }
+    .album-banner-img{
+        width: 100%; min-width: 312px; height: 355px;
+        background-position: 0 -8px; 
+    }
+    .goods-banner-img{
+        width: 100%;  height: 220px;
+        background-position: 0px -63px;
+    }
+    iframe{width: 100%; height: 100%;}
+    #bibi-is{
+        grid-column: span 2;
+        display: flex; flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .company-logo{
+        font-size: 3.75rem;
+    }
+    #bibi-is > div{
+        justify-content: space-evenly;
+    }
+}

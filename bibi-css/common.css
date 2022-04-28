@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+li{list-style-type: none;}
+a:link, a:visited{text-decoration: none; color: #333;}
+a:hover, a:active {text-decoration: none; color: #111;}
+.next-line{display: block;}
+.btn:hover{background-color: #333; color: #fff;}
+.company-logo{
+        display: inline-block;
+        font-family: 'Major Mono Display', monospace; 
+    }
+header{
+    display: flex; justify-content: space-between;
+    width: 90%; 
+    margin: 50px auto;
+}
+.wrapper{
+    width: 90%; max-width: 1810px; min-width: 325px;
+    margin: 0 auto;
+}
+/* .mat30{margin-top: 30px;}
+.mat45{margin-top: 45px;}
+.mat75{margin-top: 75px;}
+.mat175{margin-top: 175px;}
+.mab45{margin-bottom: 45px;}
+.mal20{margin-left: 20px;}
+.mal40{margin-left: 40px;} */
+/*font size*/
+/* .ft-size18p{font-size: 18px;}
+.ft-size37{font-size: 3.75rem;}
+.ft-size35{font-size: 3.5rem;} */
+/*font weight*/
+.ft-w80{font-weight: 800;}
+.ft-w60{font-weight: 600;}
+.ft-w40{font-weight: 400;}
+.ft-w30{font-weight: 300;}
+/*font family*/
+.noto{font-family: 'Noto Sans KR', sans-serif; font-size: 18px;}
+/*header*/
+.logo{
+    font-family: 'Major Mono Display', monospace; font-size: 2.5rem;
+    display: inline; color: #333;
+}
+/*icon check*/
+input#menuicon{display: none; z-index: 10000;}
+input#menuicon + label{
+    display: block;
+    width: 50px; height: 36px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+input#menuicon + label{overflow: hidden; z-index: 10000;}
+input#menuicon + label span{
+    display: block;
+    position: absolute;
+    width: 100%; height: 5px;
+    background-color: #333;
+    transition: all .35s;
+}
+input#menuicon + label span:nth-child(1){top: 0;}
+input#menuicon + label span:nth-child(2){top: 50%; transform: translateY(-50%);}
+input#menuicon + label span:nth-child(3){bottom: 0;}
+
+input#menuicon:checked + label span:nth-child(1){
+    top: 50%; transform: translateY(-50%) rotate(45deg);
+}
+input#menuicon:checked + label span:nth-child(2){opacity: 0;}
+input#menuicon:checked + label span:nth-child(3){
+    bottom: 50%; transform: translateY(-50%) rotate(-45deg);
+}
+.lyrics{
+    font-family: 'Anton', sans-serif; 
+    color: #333;
+}
+.btn{
+    font-size:1rem; line-height: 40px;
+    border: #333 solid 1px;
+    display: inline-block;
+    width: 125px; height: 45px;
+    border-radius: 35px;
+    text-align: center;
+}
+/*sidebar*/
+nav.sidebar{
+    width:270px; height: 100%;
+    background-color: #f5f5f5f6;
+    position: fixed; top: 0;
+    right: -400px;
+    z-index: 101;
+    transition: all .35s;
+}
+input#menuicon:checked + label + nav{
+    right: 0; z-index: 100;
+}
+nav.sidebar > ul{
+    font-family: 'Major Mono Display', monospace; font-size: 2rem;
+    margin-top: 100px; margin-left: 7%;
+}
+nav.sidebar > ul > li{line-height: 65px; color: #3c3c3c;}
+
+/*content*/
+.lyrics{
+    font-family: 'Anton', sans-serif; font-size:3.5rem;
+    line-height: 70px; letter-spacing: 2px;
+    color: #333;
+}
+.btn{
+    font-size:1rem; 
+    line-height: 40px;
+    border: #333 solid 1px;
+    display: inline-block;
+    width: 125px; height: 40px;
+    border-radius: 35px;
+    text-align: center;
+}
+footer{
+    display: block;
+    height: 15vh; 
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1.2rem; font-weight: 300;
+    text-align: center; line-height: 100px;
+    clear: both;
+}
+
+@media screen and (min-width:560px){
+    nav.sidebar{
+        width: 440px;
+        line-height: 75px;
+        right: -480px;
+    }
+    nav.sidebar > ul{
+        font-size: 2.5rem;
+    }
+}

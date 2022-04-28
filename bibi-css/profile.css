@@ -1,0 +1,152 @@
+@media screen and (max-width: 764px) {
+    dl{
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px; 
+    }
+     dl > dt{ 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px; font-weight: 600;
+        width: 20%;
+    }
+    dl > dd{
+        width: 80%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+    }
+    .information-bibi > div{
+        margin: 65px 0 45px;
+    }
+    .information-bibi > h1{
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 2px;
+        font-size: 7rem;
+        margin-bottom: 20px;
+    }
+    /*career*/
+    .career > h1 {text-align: center;}
+    .career > ul > li{
+        font-size: 35px;
+        display: flex;
+    }
+    .career > ul > li > ul {padding-left: 50px;}
+    .career > ul > li > ul > li{display: flex;}
+    .career > ul > li > ul > li > p{padding-left: 20px;}
+    .career > ul > li > ul > li > p.pl0{padding-left: 0;}
+    .album-img > li{
+        float: left;
+        width: 88px; height: 88px;
+        margin: 25px 0 0 15px;
+    }
+    .album-img > li:nth-child(1){margin-left: 0;}
+    .album-img > li > img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    /*slide*/
+    .album-cover{overflow: hidden; margin-top: 70px;}
+    .container{
+        width: 300vw;
+        transition: transform 0.5s;
+    }
+    .inner{
+        width: 100vw; height: 420px;
+        float: left;
+    }
+    .inner img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .inner:nth-of-type(1) img {
+        margin-top: -97px;
+        margin-left: -89px;
+        object-fit: cover;
+      }
+      .inner:nth-of-type(2) img {
+        margin-top: -220px;
+        object-fit: cover;
+      }
+      .inner:nth-of-type(3) img {
+        margin-top: -30px;
+        margin-left: -38px;
+        object-fit: cover;
+      }
+    .information-music > button{
+        width: 16px; height: 16px;
+        border: none;
+        border-radius: 20px;
+        background-color: #7f001f;
+        margin-top: 20px;
+    }
+    .information-music > button:hover{
+        background-color: #4c0012;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1080px){
+    dl{
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px; 
+    }
+     dl > dt{ 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px; font-weight: 600;
+        width: 20%;
+    }
+    dl > dd{
+        width: 80%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+    }
+    .information-bibi > div{
+        margin: 65px 0 45px;
+    }
+    .information-bibi > h1{
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 2px;
+        font-size: 7rem;
+        margin-bottom: 20px;
+    }
+    /*career*/
+    .career > h1 {text-align: center;}
+    .career > ul > li{
+        font-size: 35px;
+        display: flex;
+    }
+    .career > ul > li > ul {padding-left: 50px;}
+    .career > ul > li > ul > li{display: flex;}
+    .career > ul > li > ul > li > p{padding-left: 20px;}
+    .career > ul > li > ul > li > p.pl0{padding-left: 0;}
+    .album-img > li{
+        float: left;
+        width: 88px; height: 88px;
+        margin: 25px 0 0 15px;
+    }
+    .album-img > li:nth-child(1){margin-left: 0;}
+    .album-img > li > img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    /*slide*/
+    .album-cover{margin-top: 70px;}
+    .container{
+        display: flex; justify-content: space-between;
+        height: 280px;
+    }
+    .inner{
+        width: 30%; height: 25vh;
+        overflow: hidden;
+        background-color: blueviolet;
+    }
+    .inner img {
+        width: 100%;
+        object-fit: cover;
+      }
+      
+    .information-music > button{
+        display: none;
+    }
+    
+}
