@@ -124,7 +124,7 @@ iframe{width: 100%; height: 420px;}
 }
 @media screen and (min-width:1070px){
     .main-txt{
-        top: 280px; left: 100px;
+        top: 266px; left: 100px;
     }
     .wrapper > section{
         display: grid;
