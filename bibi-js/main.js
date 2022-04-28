@@ -1,3 +1,4 @@
+//main페이지 사진 이동경로
 {
     let goToSchedule = document.querySelector("#main-banner-img");
     goToSchedule.addEventListener('click', () => {

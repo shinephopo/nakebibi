@@ -7,6 +7,7 @@
     <title>Welcome, Bibitan</title>
     <link rel="stylesheet" type="text/css" href="bibi-css/common.css">
     <link rel="stylesheet" type="text/css" href="bibi-css/profile.css">
+    
 </head>
 <body>
     <header>
@@ -23,15 +24,15 @@
                     </dd>
                 </dl>
                 <div>
-                    <img src="../img/profile-bibi.jpg" alt="">
-                    <p class="company-logo ft-size35 mal20"><a href="http://feelghood.com/" target="_blank">
+                    <img src="../bibi-img/profile-bibi.jpg" alt="">
+                    <p class="company-logo"><a href="http://feelghood.com/" target="_blank">
                         Feel 
                         <span class="next-line">Ghood</span>
                         Music </a>
                     </p>
                 </div>
                 <h1>Naked BIBI</h1>
-                <dl>
+                <dl class="bibi-info">
                     <dt>Name</dt>
                     <dd>김형서</dd>
                     <dt>Birth</dt>
@@ -39,66 +40,55 @@
                     <dt>Signature</dt>
                     <dd>눈 밑 2개의 붉은 점</dd>
                 </dl>
-                <a class="btn mat45 mab45" href="https://instagram.com/nakedbibi?utm_medium=copy_link" target="_blank">Instargram</a>
-                <a class="btn mat45 mab45 mal20" href="http://feelghood.com/" target="_blank">Company</a>
+                <a class="btn" href="https://instagram.com/nakedbibi?utm_medium=copy_link" target="_blank">Instargram</a>
+                <a class="btn" href="http://feelghood.com/" target="_blank">Company</a>
             </div>
             <div class="information-music">
                 <div class="album-cover">
                     <ul class="container">
-                        <li class="inner"><img src="../img/profile-ca0.jpg" alt=""></li>
-                        <li class="inner"><img src="../img/profile-ca1.jpg" alt=""></li>
-                        <li class="inner"><img src="../img/profile-ca2.jpg" alt=""></li>
+                        <li class="inner"><img src="../bibi-img/profile-ca0.jpg" alt=""></li>
+                        <li class="inner"><img src="../bibi-img/profile-ca1.jpg" alt=""></li>
+                        <li class="inner"><img src="../bibi-img/profile-ca2.jpg" alt=""></li>
                     </ul>
                 </div>
                 <button class="button01"></button>
                 <button class="button02"></button>
                 <button class="button03"></button>
-                <script>
-                    document.querySelector('.button01').addEventListener('click',function(){
-                        document.querySelector('.container').style.transform= 'translate(0vw)';
-                    });
-                    document.querySelector('.button02').addEventListener('click',function(){
-                        document.querySelector('.container').style.transform= 'translate(-100vw)';
-                    });
-                    document.querySelector('.button03').addEventListener('click',function(){
-                        document.querySelector('.container').style.transform= 'translate(-200vw)';
-                    });
-                </script>
                 <dl>
-                    <dt class="mat75">Music.</dt>
-                    <dd class="mat75">아름다운 것들을 아름답게 다루는 데에 치중하기 보다는 세상에서 소외되고 숨겨진 
+                    <dt>Music.</dt>
+                    <dd>아름다운 것들을 아름답게 다루는 데에 치중하기 보다는 세상에서 소외되고 숨겨진 
                         아름답지 않은 슬픔과 아픔들을 찾아 음악으로 아름답게 승화하는 것에 초점을 맞춘 음악 스타일
                     </dd>
-                    <dt class="mat75">RedDot.</dt>
-                    <dd class="mat75">
+                    <dt>RedDot.</dt>
+                    <dd>
                         눈 밑의 점은 실제 점이 아닌 실핀에 틴트를 바른 것으로 무대에서 자기자신을 잃어버리지 않고 
                         현재 어디에 있는지 자각하게 해주는 부적의 의미로 쓰이고 있습니다.
-                        <span class="next-line mat30">
+                        <span class="next-line">
                         또 이와 관련하여 돌아가신 할아버지와의 일화가 있으며, 
                         매 순간 할아버지처럼 침착하고 멋있는 사람이 되고자하는 마음도 함께 담겨있습니다.</span>
                     </dd>
-                    <dt class="mat75">
-                        <span class="nest-line">Sound</span>
+                    <dt>
+                        <span class="next-line">Sound</span>
                         Signature.
                     </dt>
-                    <dd class="mat75">비비의 시그니처 사운드는 '이-잇'으로 비비가 작곡한 노래임을 나타내기 위해 
+                    <dd>비비의 시그니처 사운드는 '이-잇'으로 비비가 작곡한 노래임을 나타내기 위해 
                         곡 초반이나 보컬 라인/ 벌스, 후반 부 등에 삽입하고 있습니다.
                     </dd>
-                    <dt class="mat75">Award.</dt>
-                    <dd class="mat75">
+                    <dt>Award.</dt>
+                    <dd>
                         2021: 올해의 아티스트 상, 올해의 트랙 상, 올해의 R&B상, 올해의 콜라보 상 
                         등등
                     </dd>
-                    <dt class="mat75">FanClub</dt>
-                    <dd class="mat75">비비탄</dd>
+                    <dt>FanClub</dt>
+                    <dd>비비탄</dd>
                 </dl>
             </div>
         </section>
         <section class="career">
-            <h1 class="noto ft-w60 mat175">Career</h1>
-            <ul class="mat75">
-                <li class="noto ft-w60">2021
-                    <ul class="noto ft-size18p ft-w30">
+            <h1>Career</h1>
+            <ul>
+                <li class="year">2021
+                    <ul>
                         <li>
                             <span>02월,</span>
                             <p>사랑의 묘약</p>
@@ -135,14 +125,14 @@
                         </li>
                         <li>
                             <ul class="album-img">
-                                <li><img src="../img/eat-my-love.jpg" alt="사랑의묘약 앨범 커버"></li>
-                                <li><img src="../img/pado.jpg" alt="파도 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/eat-my-love.jpg" alt="사랑의묘약 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/pado.jpg" alt="파도 앨범 커버"></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="noto ft-w60 mat75">2020
-                    <ul class="noto ft-size18p ft-w30">
+                <li class="year">2020
+                    <ul>
                         <li>
                             <span>02월,</span>
                             <p>LISTEN 035 신경쓰여</p>
@@ -187,15 +177,15 @@
                         </li>
                         <li>
                             <ul class="album-img">
-                                <li><img src="../img/kazino.jpg" alt="사장님도박은재미로하셔야합니다 앨범 커버"></li>
-                                <li><img src="../img/shegotit.jpg" alt="쉬가릿 앨범 커버"></li>
-                                <li><img src="../img/korean-traditional.jpg" alt="한량 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/kazino.jpg" alt="사장님도박은재미로하셔야합니다 앨범 커버"></li>
+                                <li><img class="img-hei100 sgi" src="../bibi-img/shegotit.jpg" alt="쉬가릿 앨범 커버"></li>
+                                <li><img class="img-hei100 han" src="../bibi-img/korean-traditional.jpg" alt="한량 앨범 커버"></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="noto ft-w60 mat75">2019
-                    <ul class="noto ft-size18p ft-w30">
+                <li class="year">2019
+                    <ul>
                         <li>
                             <span>02월,</span>
                             <p>LISTEN 035 신경쓰여</p>
@@ -225,24 +215,25 @@
                         </li>
                         <li>
                             <ul class="album-img">
-                                <li><img src="../img/binu.jpg" alt="비누 앨범 커버"></li>
-                                <li><img src="../img/lover.jpg" alt="사랑하는 사람을 위한 지침서 앨범 커버"></li>
-                                <li><img src="../img/jakuk.png" alt="자국 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/binu.jpg" alt="비누 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/lover.jpg" alt="사랑하는 사람을 위한 지침서 앨범 커버"></li>
+                                <li><img class="img-wid100" src="../bibi-img/jakuk.png" alt="자국 앨범 커버"></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="noto ft-w60 mat75">2018
-                    <ul class="noto ft-size18p ft-w30">
-                        <span>11월,</span>
-                        <p>SBS &lt;the fan&gt; 1Round, part1</p> 
+                <li class="year">2018
+                    <ul>
+                        <li>
+                            <span>11월,</span>
+                            <p>SBS &lt;the fan&gt; 1Round, part1</p> 
+                        </li>
                     </ul>
                 </li>
-                <li class="noto ft-w60 mat45">2017
-                    <ul class="noto ft-size18p ft-w30">
+                <li class="year">2017
+                    <ul>
                         <li>
-                            <p class="pl0"> 
-                                블랙나인 [BLACK NINE] 앨범 참여
+                            <p>블랙나인 [BLACK NINE] 앨범 참여
                                 <span class="next-line">타이거jk, 윤미래 [Ghood Family] 앨범 참여</span>
                             </p>
                         </li>
@@ -252,5 +243,6 @@
         </section>
     </div>
     <footer>Bibitan’s so proud of Bibi.</footer>
+    <script src="bibi-js/sub.js"></script>
 </body>
 </html>
