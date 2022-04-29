@@ -12,18 +12,18 @@
     font-family: 'Anton', sans-serif; 
 }
 #album-goods{
-    margin: 36px auto;
+    margin: 17px auto;
     width: 100%;
     display: flex; justify-content: space-between;
 }
 .album-banner-img{
-    width: 40%; height: 100%;
+    width: 40%; 
     background: url('../bibi-img/album-banner.png') 0 0 no-repeat;
     cursor: pointer;
 }
 .goods-banner-img{
-    width: 55%;  height: 100%;
-    background: url('../bibi-img/main-goods.jpg') no-repeat;  
+    width: 55%; 
+    background: url('../bibi-img/main-goods.jpg') -24px 0 no-repeat;  
     cursor: pointer;
 }
 .album-banner-img > a, .goods-banner-img > a{
@@ -48,8 +48,9 @@ iframe{width: 100%; height: 420px;}
 #bibi-is > div > p{font-size: 1rem;}
 #main-banner-img{
     height: 400px; 
-    background-position: -280px;
-    margin-top: 5vh;
+    background-position: -248px;
+    margin-top: 25px;
+    background-size: cover;
 }
 .album-banner-img, .goods-banner-img{
     height: 300px;
@@ -57,7 +58,7 @@ iframe{width: 100%; height: 420px;}
     font-size: 2.5rem;
 }
 .album-banner-img{
-    background-position: -20px;
+    background-position: -50px;
     background-size: cover;
 }
 #bibi-is > div{
@@ -90,11 +91,14 @@ iframe{width: 100%; height: 420px;}
     #main-banner-img{
         width: 100%;  
         height: 620px; margin-top: 30px;
-        background-position: -21px;
+        background-position: -8px;
+    }
+    #album-goods{
+        margin: 33px auto;
     }
     .album-banner-img{
         height: 400px;
-        background-position: 0;
+        background-position: -28px;
     }
     .goods-banner-img{
         height: 400px;

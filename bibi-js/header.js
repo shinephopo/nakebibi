@@ -10,9 +10,7 @@ var mainheader=`
             <ul>
                 <li><a href="index.html">Let's Bibi</a></li>
                 <li><a href="profile.html">PROFILE</a></li>
-                <li><a href="album.html">ALBUM</a></li>
-                <li><a href="goods.html">GOODS</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="https://blog.naver.com/marpple/222326496125" target="_blank">GOODS SHOP</a></li>
             </ul>
         </nav>
 `;
