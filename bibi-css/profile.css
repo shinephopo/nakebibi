@@ -197,6 +197,10 @@ margin-left: -18px;
     }
     .container{
         width: 100vw;
+        margin-bottom: 20px;
+    }
+    .button01, .button02, .button03{
+        display: none;
     }
     .inner{
         width: 30%;
